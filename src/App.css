@@ -1,0 +1,90 @@
+body {
+  font-family: Arial, sans-serif;
+}
+.app-container {
+  max-width: 800px;
+  margin: 32px auto;
+  background: #fafafa;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  padding: 16px;
+}
+.header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 16px;
+}
+.title-input {
+  font-size: 1.2em;
+  padding: 4px 8px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  flex: 1;
+}
+.export-btn, .import-btn {
+  padding: 6px 16px;
+  border-radius: 4px;
+  border: none;
+  background: #4f8cff;
+  color: #fff;
+  cursor: pointer;
+}
+.export-btn:hover, .import-btn:hover {
+  background: #3466b7;
+}
+.main-content {
+  display: flex;
+  flex-direction: row;
+}
+.sidebar {
+  width: 80px;
+  background: #e8e8e8;
+  border-radius: 8px;
+  padding: 16px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-right: 16px;
+}
+.tools-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.tool-item {
+  font-size: 2em;
+  padding: 8px;
+  border-radius: 8px;
+  background: #fff;
+  cursor: grab;
+  border: 2px solid transparent;
+  transition: border 0.2s;
+}
+.tool-item.selected {
+  border: 2px solid #4f8cff;
+  background: #e0f0ff;
+}
+.canvas {
+  position: relative;
+  background: #f0f0f0;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  width: 600px;
+  height: 400px;
+  overflow: hidden;
+}
+.canvas-shape {
+  transition: box-shadow 0.2s;
+}
+.canvas-shape:hover {
+  box-shadow: 0 0 8px #4f8cff;
+}
+.bottom-panel {
+  font-size: 1.2em;
+  background: #fff;
+  border-top: 1px solid #ccc;
+  padding: 8px;
+  margin-top: 16px;
+  border-radius: 0 0 8px 8px;
+}
